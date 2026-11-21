@@ -13,10 +13,10 @@ def generate_launch_description():
     pkg_description = get_package_share_directory('loader_description')
 
     world_file = os.path.join(pkg_simulation, 'worlds','empty_world.sdf')
-    xacro_file = os.path.join(pkg_description, 'urdf', 'wheel_loader_v5.urdf.xacro')
-    doc = xacro.process_file(xacro_file)
+    xacro_file = os.path.join(pkg_description, 'urdf', 'wheel_loader.urdf.xacro')
+    doc = xacro.process_file(xacro_file, mappings={'sim': 'classic'})
     robot_desc = doc.toprettyxml(indent='  ')
-
+    
     return LaunchDescription([
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),

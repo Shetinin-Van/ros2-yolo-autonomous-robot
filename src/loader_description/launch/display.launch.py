@@ -9,7 +9,7 @@ import xacro
 
 def generate_launch_description():
     pkg_description = get_package_share_directory('loader_description')
-    xacro_file = os.path.join(pkg_description,'urdf','wheel_loader_v5.urdf.xacro')
+    xacro_file = os.path.join(pkg_description, 'urdf', 'wheel_loader.urdf.xacro')
 
     doc = xacro.process_file(xacro_file)
     robot_desc = doc.toprettyxml(indent='  ')
