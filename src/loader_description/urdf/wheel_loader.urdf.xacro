@@ -46,12 +46,12 @@
       </inertial>
       <visual name="tire">
         <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry><mesh filename="package://loader_description/meshes/visual/wheel_${side}_tire.stl" scale="0.001 0.001 0.001"/></geometry>
+        <geometry><mesh filename="package://loader_description/meshes/visual/wheel_${side}_tire.stl" scale="1 1 1"/></geometry>
         <material name="tire_black"/>
       </visual>
       <visual name="lugs">
         <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry><mesh filename="package://loader_description/meshes/visual/wheel_${side}_lugs.stl" scale="0.001 0.001 0.001"/></geometry>
+        <geometry><mesh filename="package://loader_description/meshes/visual/wheel_${side}_lugs.stl" scale="1 1 1"/></geometry>
         <material name="lug_grey"/>
       </visual>
       <collision name="tire">
@@ -79,62 +79,62 @@
     <visual name="rear_frame">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://loader_description/meshes/visual/rear_frame.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/van/mlproject_ws/src/loader_description/meshes/visual/rear_frame.stl" scale="1 1 1"/>
       </geometry>
       <material name="frame_green"/>
     </visual>
     <visual name="cab_body">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/cab_body.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/cab_body.stl" scale="1 1 1"/></geometry>
       <material name="cab_green"/>
     </visual>
     <visual name="cab_glass">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/cab_glass.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/cab_glass.stl" scale="1 1 1"/></geometry>
       <material name="glass"/>
     </visual>
     <visual name="cab_base">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/cab_base.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/cab_base.stl" scale="1 1 1"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="rear_hinge_lugs">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/rear_hinge_lugs.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/rear_hinge_lugs.stl" scale="1 1 1"/></geometry>
       <material name="frame_green"/>
     </visual>
     <visual name="hinge_pin">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/hinge_pin.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/hinge_pin.stl" scale="1 1 1"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="rear_stub_pin_right">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/rear_stub_pin_right.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/rear_stub_pin_right.stl" scale="1 1 1"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="rear_stub_pin_left">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/rear_stub_pin_left.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/rear_stub_pin_left.stl" scale="1 1 1"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="fender_rr">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/fender_rr.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/fender_rr.stl" scale="1 1 1"/></geometry>
       <material name="fender_black"/>
     </visual>
     <visual name="fender_rl">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/fender_rl.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/fender_rl.stl" scale="1 1 1"/></geometry>
       <material name="fender_black"/>
     </visual>
     <collision name="rear_frame_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/rear_frame_collision.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/rear_frame_collision.stl" scale="1 1 1"/></geometry>
     </collision>
     <collision name="cab_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/cab_collision.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/cab_collision.stl" scale="1 1 1"/></geometry>
     </collision>
     <xacro:if value="${add_axle_stubs}">
       <visual name="axle_stub_0">
@@ -162,37 +162,37 @@
     </inertial>
     <visual name="front_frame">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/front_frame.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/front_frame.stl" scale="1 1 1"/></geometry>
       <material name="frame_green"/>
     </visual>
     <visual name="front_plate">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/front_plate.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/front_plate.stl" scale="1 1 1"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="front_hinge_lugs">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/front_hinge_lugs.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/front_hinge_lugs.stl" scale="1 1 1"/></geometry>
       <material name="frame_green"/>
     </visual>
     <visual name="hinge_bushing">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/hinge_bushing.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/hinge_bushing.stl" scale="1 1 1"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="fender_fr">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/fender_fr.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/fender_fr.stl" scale="1 1 1"/></geometry>
       <material name="fender_black"/>
     </visual>
     <visual name="fender_fl">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/fender_fl.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/fender_fl.stl" scale="1 1 1"/></geometry>
       <material name="fender_black"/>
     </visual>
     <collision name="front_frame_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/front_frame_collision.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/front_frame_collision.stl" scale="1 1 1"/></geometry>
     </collision>
     <xacro:if value="${add_axle_stubs}">
       <visual name="axle_stub_0">
@@ -227,16 +227,16 @@
     </inertial>
     <visual name="left_lift_arm">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/left_lift_arm.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/left_lift_arm.stl" scale="1 1 1"/></geometry>
       <material name="arm_dark"/>
     </visual>
     <collision name="col0">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_left_col0.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_left_col0.stl" scale="1 1 1"/></geometry>
     </collision>
     <collision name="col1">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_left_col1.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_left_col1.stl" scale="1 1 1"/></geometry>
     </collision>
   </link>
   <joint name="left_lift_arm_joint" type="revolute">
@@ -255,16 +255,16 @@
     </inertial>
     <visual name="right_lift_arm">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/right_lift_arm.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/right_lift_arm.stl" scale="1 1 1"/></geometry>
       <material name="arm_dark"/>
     </visual>
     <collision name="col0">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_right_col0.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_right_col0.stl" scale="1 1 1"/></geometry>
     </collision>
     <collision name="col1">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_right_col1.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_right_col1.stl" scale="1 1 1"/></geometry>
     </collision>
   </link>
   <joint name="right_lift_arm_joint" type="revolute">
@@ -283,24 +283,24 @@
     </inertial>
     <visual name="bucket">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/bucket.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/bucket.stl" scale="1 1 1"/></geometry>
       <material name="arm_dark"/>
     </visual>
     <collision name="floor">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_floor.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_floor.stl" scale="1 1 1"/></geometry>
     </collision>
     <collision name="back_wall">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_back_wall.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_back_wall.stl" scale="1 1 1"/></geometry>
     </collision>
     <collision name="side_left">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_side_left.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_side_left.stl" scale="1 1 1"/></geometry>
     </collision>
     <collision name="side_right">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_side_right.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_side_right.stl" scale="1 1 1"/></geometry>
     </collision>
   </link>
   <joint name="bucket_joint" type="revolute">
@@ -319,12 +319,12 @@
     </inertial>
     <visual name="camera_body">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/camera_body.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/camera_body.stl" scale="1 1 1"/></geometry>
       <material name="camera_dark"/>
     </visual>
     <visual name="camera_rear_ports">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/camera_rear_ports.stl" scale="0.001 0.001 0.001"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/camera_rear_ports.stl" scale="1 1 1"/></geometry>
       <material name="camera_dark"/>
     </visual>
   </link>
@@ -340,6 +340,6 @@
     <origin xyz="0 0 0" rpy="-1.570796 0 -1.570796"/>
   </joint>
 
-  <!-- <xacro:include filename="$(find loader_description)/urdf/wheel_loader.ros2_control.xacro"/> -->
+  <xacro:include filename="$(find loader_description)/urdf/wheel_loader.ros2_control.xacro"/>
   <!-- <xacro:include filename="$(find loader_description)/urdf/wheel_loader.gazebo.xacro"/> -->
 </robot>
