@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="barrel_rolling_yellow">
+    <static>false</static>
+    <link name="link">
+      <velocity_decay><linear>0.01</linear><angular>0.12</angular></velocity_decay>
+      <inertial><pose>0 0 0.290 0 0 0</pose><mass>25.0</mass><inertia><ixx>2.1390</ixx><iyy>1.0512</iyy><izz>2.1390</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c0"><pose>0.0000 0.0000 0.2900 1.5708 0.0000 0.0000</pose><geometry><cylinder><radius>0.2900</radius><length>0.8800</length></cylinder></geometry><surface><friction><ode><mu>0.7</mu><mu2>0.7</mu2></ode></friction></surface></collision>
+      <visual name="body"><pose>0 0 0 0 0 0</pose><geometry><mesh><uri>model://barrel_rolling_yellow/meshes/body.stl</uri></mesh></geometry><material><ambient>0.744 0.608 0.080 1</ambient><diffuse>0.930 0.760 0.100 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+      <visual name="rings"><pose>0 0 0 0 0 0</pose><geometry><mesh><uri>model://barrel_rolling_yellow/meshes/rings.stl</uri></mesh></geometry><material><ambient>0.744 0.608 0.080 1</ambient><diffuse>0.930 0.760 0.100 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+      <visual name="lids"><pose>0 0 0 0 0 0</pose><geometry><mesh><uri>model://barrel_rolling_yellow/meshes/lids.stl</uri></mesh></geometry><material><ambient>0.360 0.376 0.400 1</ambient><diffuse>0.450 0.470 0.500 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

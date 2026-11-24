@@ -9,7 +9,7 @@ material LoaderMap/Track
       
       texture_unit
       {
-        texture loader_polygon_v4_texture.png
+        texture loader_polygon_v10_texture.png
         filtering trilinear
       }
     }

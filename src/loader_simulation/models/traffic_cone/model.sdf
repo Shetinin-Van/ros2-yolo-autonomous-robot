@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="traffic_cone">
+    <static>false</static>
+    <link name="link">
+      <inertial><pose>0 0 0.350 0 0 0</pose><mass>1.6</mass><inertia><ixx>0.0721</ixx><iyy>0.0721</iyy><izz>0.0135</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c0"><pose>0.0000 0.0000 0.3500 0 0 0</pose><geometry><cylinder><radius>0.1300</radius><length>0.7000</length></cylinder></geometry></collision>
+      <visual name="base"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://traffic_cone/meshes/base.stl</uri></mesh></geometry><material><ambient>0.040 0.040 0.048 1</ambient><diffuse>0.050 0.050 0.060 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+      <visual name="cone"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://traffic_cone/meshes/cone.stl</uri></mesh></geometry><material><ambient>0.800 0.336 0.040 1</ambient><diffuse>1.000 0.420 0.050 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+      <visual name="band"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://traffic_cone/meshes/band.stl</uri></mesh></geometry><material><ambient>0.752 0.752 0.736 1</ambient><diffuse>0.940 0.940 0.920 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>
