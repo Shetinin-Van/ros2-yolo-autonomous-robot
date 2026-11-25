@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="wood_logs_pyramid">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><pose>0.0000 0.0000 0.2160 0 0 0.0000</pose><geometry><box><size>3.2000 0.9600 0.4320</size></box></geometry></collision>
+      <visual name="logs"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://wood_logs_pyramid/meshes/logs.stl</uri></mesh></geometry><material><ambient>0.320 0.224 0.128 1</ambient><diffuse>0.400 0.280 0.160 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

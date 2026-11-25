@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="ramp_10deg">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><geometry><mesh><uri>model://ramp_10deg/meshes/body.stl</uri></mesh></geometry></collision>
+      <visual name="body"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://ramp_10deg/meshes/body.stl</uri></mesh></geometry><material><ambient>0.496 0.496 0.480 1</ambient><diffuse>0.620 0.620 0.600 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

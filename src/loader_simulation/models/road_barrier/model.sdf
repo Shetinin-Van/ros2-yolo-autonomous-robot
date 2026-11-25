@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="road_barrier">
+    <static>false</static>
+    <link name="link">
+      <inertial><pose>0 0 0.500 0 0 0</pose><mass>12.0</mass><inertia><ixx>1.3136</ixx><iyy>3.5600</iyy><izz>2.8736</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c0"><pose>0.0000 0.0000 0.7000 0 0 0.0000</pose><geometry><box><size>1.6000 0.0600 0.5000</size></box></geometry></collision>
+      <collision name="c1"><pose>-0.6800 0.0000 0.0150 0 0 0.0000</pose><geometry><box><size>0.1000 0.5600 0.0300</size></box></geometry></collision>
+      <collision name="c2"><pose>0.6800 0.0000 0.0150 0 0 0.0000</pose><geometry><box><size>0.1000 0.5600 0.0300</size></box></geometry></collision>
+      <visual name="legs"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://road_barrier/meshes/legs.stl</uri></mesh></geometry><material><ambient>0.360 0.376 0.400 1</ambient><diffuse>0.450 0.470 0.500 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+      <visual name="plank_red"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://road_barrier/meshes/plank_red.stl</uri></mesh></geometry><material><ambient>0.624 0.080 0.064 1</ambient><diffuse>0.780 0.100 0.080 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+      <visual name="plank_white"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://road_barrier/meshes/plank_white.stl</uri></mesh></geometry><material><ambient>0.752 0.752 0.736 1</ambient><diffuse>0.940 0.940 0.920 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

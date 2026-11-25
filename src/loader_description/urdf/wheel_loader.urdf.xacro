@@ -1,22 +1,21 @@
 <?xml version="1.0"?>
-<!-- wheel_loader.urdf.xacro  -  articulated front-end wheel loader (ROS 2 Humble).
-     Frames: ROS convention (x forward, y left, z up). base_link = rear axle centre at axle height,
-     base_footprint = its projection on the ground. All lengths in metres, STL files in link frames.
-     Joint/inertia numbers are generated from the corrected STEP assembly (see docs/ANALYSIS.md). -->
 <robot name="wheel_loader" xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:arg name="sim" default="none"/>              <!-- none | mock | classic | ignition -->
-  <xacro:arg name="add_axle_stubs" default="true"/>
+  <xacro:arg name="sim" default="none"/>
+  <xacro:arg name="camera_pitch" default="0.12"/> 
+  <xacro:arg name="lidar_3d" default="true"/> 
+  <xacro:arg name="rear_camera" default="false"/> 
   <xacro:arg name="controllers_yaml" default="$(find loader_description)/config/ros2_controllers.yaml"/>
   <xacro:property name="sim" value="$(arg sim)"/>
-  <xacro:property name="add_axle_stubs" value="$(arg add_axle_stubs)"/>
+  <xacro:property name="camera_pitch" value="$(arg camera_pitch)"/>
+  <xacro:property name="lidar_3d" value="$(arg lidar_3d)"/>
+  <xacro:property name="rear_camera" value="$(arg rear_camera)"/>
   <xacro:property name="controllers_yaml" value="$(arg controllers_yaml)"/>
   <xacro:property name="wheel_radius" value="0.196892"/>
   <xacro:property name="wheel_width" value="0.169728"/>
-  <xacro:property name="stub_radius" value="0.032"/>
   <xacro:property name="front_limit" value="0.610865"/>
   <xacro:property name="front_effort" value="40000"/>
   <xacro:property name="front_velocity" value="0.35"/>
-  <xacro:property name="arm_lower" value="-0.2135"/>
+  <xacro:property name="arm_lower" value="-0.2116"/>
   <xacro:property name="arm_upper" value="0.7854"/>
   <xacro:property name="arm_effort" value="40000"/>
   <xacro:property name="arm_velocity" value="0.4"/>
@@ -32,27 +31,23 @@
   <material name="glass"><color rgba="0.5 0.72 0.82 0.35"/></material>
   <material name="steel"><color rgba="0.36 0.38 0.4 1"/></material>
   <material name="tire_black"><color rgba="0.09 0.1 0.11 1"/></material>
-  <material name="lug_grey"><color rgba="0.2 0.21 0.22 1"/></material>
   <material name="arm_dark"><color rgba="0.21 0.23 0.25 1"/></material>
   <material name="fender_black"><color rgba="0.12 0.14 0.15 1"/></material>
-  <material name="camera_dark"><color rgba="0.04 0.04 0.05 1"/></material>
+  <material name="camera_dark"><color rgba="0.09 0.1 0.11 1"/></material>
+  <material name="camera_glass"><color rgba="0.02 0.02 0.03 1"/></material>
+  <material name="lidar_black"><color rgba="0.05 0.05 0.06 1"/></material>
 
-  <xacro:macro name="wheel" params="id parent side xyz">
+  <xacro:macro name="wheel" params="id parent side xyz com_y">
     <link name="${id}_link">
       <inertial>
-        <origin xyz="0 -0.007485 0" rpy="0 0 0"/>
+        <origin xyz="0 ${com_y} 0" rpy="0 0 0"/>
         <mass value="45"/>
         <inertia ixx="0.506902" ixy="0" ixz="-0" iyy="0.834048" iyz="0" izz="0.506902"/>
       </inertial>
-      <visual name="tire">
+      <visual name="wheel">
         <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry><mesh filename="package://loader_description/meshes/visual/wheel_${side}_tire.stl" scale="1 1 1"/></geometry>
+        <geometry><mesh filename="package://loader_description/meshes/visual/wheel_${side}.stl"/></geometry>
         <material name="tire_black"/>
-      </visual>
-      <visual name="lugs">
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-        <geometry><mesh filename="package://loader_description/meshes/visual/wheel_${side}_lugs.stl" scale="1 1 1"/></geometry>
-        <material name="lug_grey"/>
       </visual>
       <collision name="tire">
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>
@@ -72,82 +67,58 @@
   <link name="base_footprint"/>
   <link name="base_link">
     <inertial>
-      <origin xyz="-0.259163 0.000379 0.396715" rpy="0 0 0"/>
+      <origin xyz="-0.25917 0.000379 0.39671" rpy="0 0 0"/>
       <mass value="733.3"/>
-      <inertia ixx="181.713235" ixy="-0.033091" ixz="-17.15344" iyy="205.897792" iyz="-0.197838" izz="196.657879"/>
+      <inertia ixx="181.631112" ixy="-0.033093" ixz="-17.152335" iyy="205.890158" iyz="-0.197839" izz="196.564163"/>
     </inertial>
     <visual name="rear_frame">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry>
-        <mesh filename="file:///home/van/mlproject_ws/src/loader_description/meshes/visual/rear_frame.stl" scale="1 1 1"/>
-      </geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/rear_frame.stl"/></geometry>
       <material name="frame_green"/>
     </visual>
     <visual name="cab_body">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/cab_body.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/cab_body.stl"/></geometry>
       <material name="cab_green"/>
     </visual>
     <visual name="cab_glass">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/cab_glass.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/cab_glass.stl"/></geometry>
       <material name="glass"/>
     </visual>
     <visual name="cab_base">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/cab_base.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/cab_base.stl"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="rear_hinge_lugs">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/rear_hinge_lugs.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/rear_hinge_lugs.stl"/></geometry>
       <material name="frame_green"/>
     </visual>
     <visual name="hinge_pin">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/hinge_pin.stl" scale="1 1 1"/></geometry>
-      <material name="steel"/>
-    </visual>
-    <visual name="rear_stub_pin_right">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/rear_stub_pin_right.stl" scale="1 1 1"/></geometry>
-      <material name="steel"/>
-    </visual>
-    <visual name="rear_stub_pin_left">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/rear_stub_pin_left.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/hinge_pin.stl"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="fender_rr">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/fender_rr.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/fender_rr.stl"/></geometry>
       <material name="fender_black"/>
     </visual>
     <visual name="fender_rl">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/fender_rl.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/fender_rl.stl"/></geometry>
       <material name="fender_black"/>
     </visual>
     <collision name="rear_frame_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/rear_frame_collision.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/rear_frame_collision.stl"/></geometry>
     </collision>
     <collision name="cab_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/cab_collision.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/cab_collision.stl"/></geometry>
     </collision>
-    <xacro:if value="${add_axle_stubs}">
-      <visual name="axle_stub_0">
-        <origin xyz="0 0.686032 0" rpy="${pi/2} 0 0"/>
-        <geometry><cylinder radius="${stub_radius}" length="0.104864"/></geometry>
-        <material name="steel"/>
-      </visual>
-      <visual name="axle_stub_1">
-        <origin xyz="0 -0.686032 0" rpy="${pi/2} 0 0"/>
-        <geometry><cylinder radius="${stub_radius}" length="0.104864"/></geometry>
-        <material name="steel"/>
-      </visual>
-    </xacro:if>
   </link>
   <joint name="base_footprint_joint" type="fixed">
     <parent link="base_footprint"/>
@@ -156,56 +127,44 @@
   </joint>
   <link name="front_frame">
     <inertial>
-      <origin xyz="0.610379 -0 0.087466" rpy="0 0 0"/>
+      <origin xyz="0.596638 -0 0.087463" rpy="0 0 0"/>
       <mass value="391"/>
-      <inertia ixx="45.484696" ixy="0.000001" ixz="-1.902399" iyy="40.977378" iyz="0" izz="56.523577"/>
+      <inertia ixx="44.450083" ixy="0.000001" ixz="-1.893695" iyy="40.862185" iyz="0" izz="55.373341"/>
     </inertial>
     <visual name="front_frame">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/front_frame.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/front_frame.stl"/></geometry>
       <material name="frame_green"/>
     </visual>
     <visual name="front_plate">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/front_plate.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/front_plate.stl"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="front_hinge_lugs">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/front_hinge_lugs.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/front_hinge_lugs.stl"/></geometry>
       <material name="frame_green"/>
     </visual>
     <visual name="hinge_bushing">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/hinge_bushing.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/hinge_bushing.stl"/></geometry>
       <material name="steel"/>
     </visual>
     <visual name="fender_fr">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/fender_fr.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/fender_fr.stl"/></geometry>
       <material name="fender_black"/>
     </visual>
     <visual name="fender_fl">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/fender_fl.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/fender_fl.stl"/></geometry>
       <material name="fender_black"/>
     </visual>
     <collision name="front_frame_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/front_frame_collision.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/front_frame_collision.stl"/></geometry>
     </collision>
-    <xacro:if value="${add_axle_stubs}">
-      <visual name="axle_stub_0">
-        <origin xyz="0.5568 0.609232 -0.093722" rpy="${pi/2} 0 0"/>
-        <geometry><cylinder radius="${stub_radius}" length="0.258464"/></geometry>
-        <material name="steel"/>
-      </visual>
-      <visual name="axle_stub_1">
-        <origin xyz="0.5568 -0.609232 -0.093722" rpy="${pi/2} 0 0"/>
-        <geometry><cylinder radius="${stub_radius}" length="0.258464"/></geometry>
-        <material name="steel"/>
-      </visual>
-    </xacro:if>
   </link>
   <joint name="front_frame_joint" type="revolute">
     <parent link="base_link"/>
@@ -215,123 +174,101 @@
     <limit lower="${-front_limit}" upper="${front_limit}" effort="${front_effort}" velocity="${front_velocity}"/>
     <dynamics damping="1.0" friction="0.5"/>
   </joint>
-  <xacro:wheel id="wheel_01" parent="front_frame" side="left" xyz="0.5568 0.738464 -0.093722"/>
-  <xacro:wheel id="wheel_02" parent="front_frame" side="right" xyz="0.5568 -0.738464 -0.093722"/>
-  <xacro:wheel id="wheel_03" parent="base_link" side="left" xyz="0 0.738464 0"/>
-  <xacro:wheel id="wheel_04" parent="base_link" side="right" xyz="0 -0.738464 0"/>
-  <link name="left_lift_arm_link">
+  <xacro:wheel id="wheel_01" parent="front_frame" side="left" xyz="0.5428 0.572864 -0.093722" com_y="-0.007485"/>
+  <xacro:wheel id="wheel_02" parent="front_frame" side="right" xyz="0.5428 -0.572864 -0.093722" com_y="0.007485"/>
+  <xacro:wheel id="wheel_03" parent="base_link" side="left" xyz="0 0.726464 0" com_y="-0.007485"/>
+  <xacro:wheel id="wheel_04" parent="base_link" side="right" xyz="0 -0.726464 0" com_y="0.007485"/>
+  <link name="lift_arm_link">
     <inertial>
       <origin xyz="0.614868 0 -0.063575" rpy="0 0 0"/>
-      <mass value="40"/>
-      <inertia ixx="0.535975" ixy="0" ixz="1.260558" iyy="5.541487" iyz="0" izz="5.037363"/>
+      <mass value="80"/>
+      <inertia ixx="22.253709" ixy="0" ixz="2.521116" iyy="11.082974" iyz="0" izz="31.256485"/>
     </inertial>
     <visual name="left_lift_arm">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/left_lift_arm.stl" scale="1 1 1"/></geometry>
+      <origin xyz="0 0.51456 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://loader_description/meshes/visual/left_lift_arm.stl"/></geometry>
       <material name="arm_dark"/>
     </visual>
-    <collision name="col0">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_left_col0.stl" scale="1 1 1"/></geometry>
-    </collision>
-    <collision name="col1">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_left_col1.stl" scale="1 1 1"/></geometry>
-    </collision>
-  </link>
-  <joint name="left_lift_arm_joint" type="revolute">
-    <parent link="front_frame"/>
-    <child link="left_lift_arm_link"/>
-    <origin xyz="0.53332 0.51456 0.331346" rpy="0 0 0"/>
-    <axis xyz="0 -1 0"/>
-    <limit lower="${arm_lower}" upper="${arm_upper}" effort="${arm_effort}" velocity="${arm_velocity}"/>
-    <dynamics damping="1.0" friction="0.5"/>
-  </joint>
-  <link name="right_lift_arm_link">
-    <inertial>
-      <origin xyz="0.614868 0 -0.063575" rpy="0 0 0"/>
-      <mass value="40"/>
-      <inertia ixx="0.535975" ixy="0" ixz="1.260558" iyy="5.541487" iyz="0" izz="5.037363"/>
-    </inertial>
     <visual name="right_lift_arm">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/right_lift_arm.stl" scale="1 1 1"/></geometry>
+      <origin xyz="0 -0.51456 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://loader_description/meshes/visual/right_lift_arm.stl"/></geometry>
       <material name="arm_dark"/>
     </visual>
-    <collision name="col0">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_right_col0.stl" scale="1 1 1"/></geometry>
-    </collision>
-    <collision name="col1">
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_right_col1.stl" scale="1 1 1"/></geometry>
-    </collision>
+    <collision name="left_col0"><origin xyz="0 0.51456 0" rpy="0 0 0"/><geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_left_col0.stl"/></geometry></collision>
+    <collision name="left_col1"><origin xyz="0 0.51456 0" rpy="0 0 0"/><geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_left_col1.stl"/></geometry></collision>
+    <collision name="right_col0"><origin xyz="0 -0.51456 0" rpy="0 0 0"/><geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_right_col0.stl"/></geometry></collision>
+    <collision name="right_col1"><origin xyz="0 -0.51456 0" rpy="0 0 0"/><geometry><mesh filename="package://loader_description/meshes/collision/lift_arm_right_col1.stl"/></geometry></collision>
   </link>
-  <joint name="right_lift_arm_joint" type="revolute">
+  <joint name="lift_arm_joint" type="revolute">
     <parent link="front_frame"/>
-    <child link="right_lift_arm_link"/>
-    <origin xyz="0.53332 -0.51456 0.331346" rpy="0 0 0"/>
+    <child link="lift_arm_link"/>
+    <origin xyz="0.51932 0 0.331346" rpy="0 0 0"/>
     <axis xyz="0 -1 0"/>
-    <limit lower="${arm_lower}" upper="${arm_upper}" effort="${arm_effort}" velocity="${arm_velocity}"/>
+    <limit lower="${arm_lower}" upper="${arm_upper}" effort="${2*arm_effort}" velocity="${arm_velocity}"/>
     <dynamics damping="1.0" friction="0.5"/>
   </joint>
   <link name="bucket_link">
     <inertial>
-      <origin xyz="0.09217 0.000392 0.012497" rpy="0 0 0"/>
+      <origin xyz="0.087019 0 0.017301" rpy="0 0 0"/>
       <mass value="90"/>
-      <inertia ixx="17.02126" ixy="-0.005326" ixz="0.173934" iyy="0.970406" iyz="-0.000214" izz="17.235275"/>
+      <inertia ixx="16.87453" ixy="0" ixz="0.200919" iyy="1.011092" iyz="0" izz="17.013005"/>
     </inertial>
     <visual name="bucket">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/bucket.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/bucket.stl"/></geometry>
       <material name="arm_dark"/>
     </visual>
-    <collision name="floor">
+    <collision name="mid0">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_floor.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_mid0.stl"/></geometry>
     </collision>
-    <collision name="back_wall">
+    <collision name="mid1">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_back_wall.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_mid1.stl"/></geometry>
     </collision>
     <collision name="side_left">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_side_left.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_side_left.stl"/></geometry>
     </collision>
     <collision name="side_right">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_side_right.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/collision/bucket_side_right.stl"/></geometry>
     </collision>
   </link>
   <joint name="bucket_joint" type="revolute">
-    <parent link="left_lift_arm_link"/>
+    <parent link="lift_arm_link"/>
     <child link="bucket_link"/>
-    <origin xyz="1.223675 -0.51456 -0.264192" rpy="0 0 0"/>
+    <origin xyz="1.223675 0 -0.264192" rpy="0 0 0"/>
     <axis xyz="0 -1 0"/>
     <limit lower="${bucket_lower}" upper="${bucket_upper}" effort="${bucket_effort}" velocity="${bucket_velocity}"/>
     <dynamics damping="1.0" friction="0.5"/>
   </joint>
   <link name="camera_link">
     <inertial>
-      <origin xyz="-0.075462 0 0.000464" rpy="0 0 0"/>
+      <origin xyz="-0.03755 0 -0.01619" rpy="0 0 0"/>
       <mass value="0.5"/>
-      <inertia ixx="0.00116" ixy="0" ixz="-0.000013" iyy="0.000845" iyz="0" izz="0.001404"/>
+      <inertia ixx="0.000626" ixy="0" ixz="-0.000249" iyy="0.000775" iyz="0" izz="0.001046"/>
     </inertial>
-    <visual name="camera_body">
+    <visual name="camera_depth_body">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/camera_body.stl" scale="1 1 1"/></geometry>
+      <geometry><mesh filename="package://loader_description/meshes/visual/camera_depth_body.stl"/></geometry>
       <material name="camera_dark"/>
     </visual>
-    <visual name="camera_rear_ports">
+    <visual name="camera_depth_optics">
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><mesh filename="package://loader_description/meshes/visual/camera_rear_ports.stl" scale="1 1 1"/></geometry>
-      <material name="camera_dark"/>
+      <geometry><mesh filename="package://loader_description/meshes/visual/camera_depth_optics.stl"/></geometry>
+      <material name="camera_glass"/>
+    </visual>
+    <visual name="camera_mount">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://loader_description/meshes/visual/camera_mount.stl"/></geometry>
+      <material name="steel"/>
     </visual>
   </link>
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link"/>
-    <origin xyz="0.15118 0 1.256902" rpy="0 0 0"/>
+    <origin xyz="0.15118 0 1.256902" rpy="0 ${camera_pitch} 0"/>
   </joint>
   <link name="camera_optical_frame"/>
   <joint name="camera_optical_joint" type="fixed">
@@ -339,7 +276,60 @@
     <child link="camera_optical_frame"/>
     <origin xyz="0 0 0" rpy="-1.570796 0 -1.570796"/>
   </joint>
+  <material name="lidar_grey"><color rgba="0.15 0.16 0.18 1"/></material>
+  <link name="lidar_link">
+    <inertial><origin xyz="0 0 -0.04657" rpy="0 0 0"/><mass value="0.25"/><inertia ixx="0.000763" ixy="0" ixz="0" iyy="0.000763" iyz="0" izz="0.000205"/></inertial>
+    <visual name="lidar_base">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://loader_description/meshes/visual/lidar_base.stl"/></geometry>
+      <material name="lidar_grey"/>
+    </visual>
+    <visual name="lidar_head">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://loader_description/meshes/visual/lidar_head.stl"/></geometry>
+      <material name="lidar_black"/>
+    </visual>
+    <visual name="lidar_mount">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry><mesh filename="package://loader_description/meshes/visual/lidar_mount.stl"/></geometry>
+      <material name="steel"/>
+    </visual>
+  </link>
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="-0.15 0 1.375" rpy="0 0 0"/>
+  </joint>
+  <link name="imu_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0"/><mass value="0.05"/><inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00001"/></inertial>
+  </link>
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="-0.1 0 0.25" rpy="0 0 0"/>
+  </joint>
+  <xacro:if value="${rear_camera}">
+    <link name="rear_camera_link">
+      <inertial><origin xyz="-0.01457 0 0" rpy="0 0 0"/><mass value="0.1"/><inertia ixx="0.0000465" ixy="0" ixz="0" iyy="0.0000153" iyz="0" izz="0.0000474"/></inertial>
+      <visual name="rear_camera">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://loader_description/meshes/visual/rear_camera.stl"/></geometry>
+        <material name="camera_dark"/>
+      </visual>
+    </link>
+    <joint name="rear_camera_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="rear_camera_link"/>
+      <origin xyz="-0.95 0 0.84" rpy="0 0.14 3.141593"/>
+    </joint>
+    <link name="rear_camera_optical_frame"/>
+    <joint name="rear_camera_optical_joint" type="fixed">
+      <parent link="rear_camera_link"/>
+      <child link="rear_camera_optical_frame"/>
+      <origin xyz="0 0 0" rpy="-1.570796 0 -1.570796"/>
+    </joint>
+  </xacro:if>
 
   <xacro:include filename="$(find loader_description)/urdf/wheel_loader.ros2_control.xacro"/>
-  <!-- <xacro:include filename="$(find loader_description)/urdf/wheel_loader.gazebo.xacro"/> -->
+  <xacro:include filename="$(find loader_description)/urdf/wheel_loader.gazebo.xacro"/>
 </robot>

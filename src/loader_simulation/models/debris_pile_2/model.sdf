@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="debris_pile_2">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><pose>-0.0191 -0.0265 0.1750 0 0 0.0000</pose><geometry><box><size>2.1313 2.0706 0.3500</size></box></geometry></collision>
+      <visual name="bricks"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://debris_pile_2/meshes/bricks.stl</uri></mesh></geometry><material><ambient>0.496 0.224 0.160 1</ambient><diffuse>0.620 0.280 0.200 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+      <visual name="concrete"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://debris_pile_2/meshes/concrete.stl</uri></mesh></geometry><material><ambient>0.496 0.496 0.480 1</ambient><diffuse>0.620 0.620 0.600 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>
