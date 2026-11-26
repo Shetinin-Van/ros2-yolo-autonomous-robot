@@ -1,0 +1,18 @@
+material LoaderMap/Track
+{
+  technique
+  {
+    pass
+    {
+      ambient 1 1 1 1
+      diffuse 1 1 1 1
+      
+      texture_unit
+      {
+        texture loader_polygon_v10_texture.png
+        filtering anisotropic
+        max_anisotropy 8
+      }
+    }
+  }
+}

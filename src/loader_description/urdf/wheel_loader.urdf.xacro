@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="wheel_loader" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:arg name="sim" default="none"/>
-  <xacro:arg name="camera_pitch" default="0.12"/> 
+  <xacro:arg name="camera_pitch" default="0.0"/> 
   <xacro:arg name="lidar_3d" default="true"/> 
   <xacro:arg name="rear_camera" default="false"/> 
   <xacro:arg name="controllers_yaml" default="$(find loader_description)/config/ros2_controllers.yaml"/>

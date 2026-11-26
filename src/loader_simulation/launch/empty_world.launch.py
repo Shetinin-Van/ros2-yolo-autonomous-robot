@@ -20,11 +20,16 @@ def generate_launch_description():
 
     xacro_file = os.path.join(pkg_description, 'urdf', 'wheel_loader.urdf.xacro')
     doc = xacro.process_file(xacro_file, mappings={'sim': 'classic'})
-    robot_desc = doc.toprettyxml(indent='  ')
+    robot_desc = doc.toxml()
 
     gazebo_model_path = AppendEnvironmentVariable(
         name='GAZEBO_MODEL_PATH',
-        value=os.path.join(pkg_simulation, 'models') + ':' + os.path.join(pkg_description, 'meshes')
+        value=os.path.join(pkg_simulation, 'models') + ':' + os.path.join(pkg_description, '..')
+    )
+
+    gazebo_resource_path = AppendEnvironmentVariable(
+        name='GAZEBO_RESOURCE_PATH',
+        value='/usr/share/gazebo-11'
     )
 
     gzserver = IncludeLaunchDescription(
@@ -63,6 +68,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         gazebo_model_path,
+        gazebo_resource_path,
         gzserver,
         gzclient,
         robot_state_publisher,
