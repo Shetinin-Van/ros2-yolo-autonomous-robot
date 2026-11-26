@@ -66,6 +66,14 @@ def generate_launch_description():
         output='screen'
     )
 
+    spawn_diff_drive_controller = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['diff_drive_controller'],
+        remappings=[('/diff_drive_controller/cmd_vel', '/cmd_vel')],
+        output='screen'
+    )
+
     return LaunchDescription([
         gazebo_model_path,
         gazebo_resource_path,
@@ -73,5 +81,6 @@ def generate_launch_description():
         gzclient,
         robot_state_publisher,
         spawn_entity,
-        spawn_joint_state_broadcaster
+        spawn_joint_state_broadcaster,
+        spawn_diff_drive_controller
     ])
