@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="cave_boulder_2">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><geometry><mesh><uri>model://cave_boulder_2/meshes/body.stl</uri></mesh></geometry></collision>
+      <visual name="body"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://cave_boulder_2/meshes/body.stl</uri></mesh></geometry><material><ambient>0.416 0.424 0.440 1</ambient><diffuse>0.520 0.530 0.550 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

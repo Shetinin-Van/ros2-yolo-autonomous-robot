@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="slope_side_8deg">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><geometry><mesh><uri>model://slope_side_8deg/meshes/collision_surface.stl</uri></mesh></geometry><surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <visual name="surface"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://slope_side_8deg/meshes/surface.stl</uri></mesh></geometry><material><ambient>0.304 0.224 0.144 1</ambient><diffuse>0.380 0.280 0.180 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

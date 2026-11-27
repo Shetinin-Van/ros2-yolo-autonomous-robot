@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="surface_wet_gravel">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><pose>0.0000 0.0000 0.0200 0 0 0.0000</pose><geometry><box><size>5.7500 5.7500 0.0400</size></box></geometry><surface><friction><ode><mu>0.55</mu><mu2>0.55</mu2></ode></friction><contact><ode><kp>5e+05</kp><kd>80</kd></ode></contact></surface></collision>
+      <visual name="surface"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://surface_wet_gravel/meshes/surface.stl</uri></mesh></geometry><material><ambient>0.272 0.264 0.264 1</ambient><diffuse>0.340 0.330 0.330 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+      <visual name="stones"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://surface_wet_gravel/meshes/stones.stl</uri></mesh></geometry><material><ambient>0.336 0.320 0.304 1</ambient><diffuse>0.420 0.400 0.380 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

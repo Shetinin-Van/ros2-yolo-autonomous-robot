@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="slope_hill_10deg">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><pose>0.0000 0.0000 0.3500 0 0 0.0000</pose><geometry><box><size>8.0000 3.0000 0.7000</size></box></geometry><surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c1"><pose>-5.9589 0.0000 0.2023 0.0000 -0.1745 0.0000</pose><geometry><box><size>4.0311 3.0000 0.3000</size></box></geometry><surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c2"><pose>5.9589 0.0000 0.2023 0.0000 0.1745 0.0000</pose><geometry><box><size>4.0311 3.0000 0.3000</size></box></geometry><surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <visual name="body"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://slope_hill_10deg/meshes/body.stl</uri></mesh></geometry><material><ambient>0.304 0.224 0.144 1</ambient><diffuse>0.380 0.280 0.180 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

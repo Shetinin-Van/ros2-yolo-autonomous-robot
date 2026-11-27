@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="basalt_column_single">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><geometry><mesh><uri>model://basalt_column_single/meshes/c0.stl</uri></mesh></geometry></collision>
+      <visual name="c0"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://basalt_column_single/meshes/c0.stl</uri></mesh></geometry><material><ambient>0.240 0.248 0.264 1</ambient><diffuse>0.300 0.310 0.330 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

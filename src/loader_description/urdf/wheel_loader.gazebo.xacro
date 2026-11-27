@@ -5,28 +5,29 @@
     <gazebo reference="wheel_02_link"><mu1>1.0</mu1><mu2>1.0</mu2><kp>1e6</kp><kd>100</kd></gazebo>
     <gazebo reference="wheel_03_link"><mu1>1.0</mu1><mu2>1.0</mu2><kp>1e6</kp><kd>100</kd></gazebo>
     <gazebo reference="wheel_04_link"><mu1>1.0</mu1><mu2>1.0</mu2><kp>1e6</kp><kd>100</kd></gazebo>
+    
     <gazebo>
       <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
         <parameters>${controllers_yaml}</parameters>
       </plugin>
     </gazebo>
+
     <gazebo reference="camera_link">
-      <sensor type="depth" name="rgbd_camera">
+      <sensor type="camera" name="rgb_camera">
         <update_rate>30</update_rate><always_on>true</always_on><visualize>false</visualize>
         <camera>
           <horizontal_fov>1.2</horizontal_fov>
           <image><width>640</width><height>480</height><format>R8G8B8</format></image>
-          <clip><near>0.2</near><far>8.0</far></clip>
-          <noise><type>gaussian</type><mean>0.0</mean><stddev>0.007</stddev></noise>
+          <clip><near>0.1</near><far>100.0</far></clip>
         </camera>
-        <plugin name="rgbd_camera_plugin" filename="libgazebo_ros_camera.so">
+        <plugin name="camera_plugin" filename="libgazebo_ros_camera.so">
           <ros><namespace>camera</namespace></ros>
-          <camera_name>rgbd</camera_name>
+          <camera_name>rgb</camera_name>
           <frame_name>camera_optical_frame</frame_name>
-          <min_depth>0.2</min_depth><max_depth>8.0</max_depth>
         </plugin>
       </sensor>
     </gazebo>
+
     <gazebo reference="lidar_link">
       <sensor type="ray" name="lidar_2d">
         <always_on>true</always_on><visualize>false</visualize><update_rate>10</update_rate>
@@ -42,6 +43,7 @@
         </plugin>
       </sensor>
     </gazebo>
+    
     <xacro:if value="${lidar_3d}">
     <gazebo reference="lidar_link">
       <sensor type="ray" name="lidar_3d">
@@ -62,6 +64,7 @@
       </sensor>
     </gazebo>
     </xacro:if>
+    
     <gazebo reference="imu_link">
       <sensor type="imu" name="imu_sensor">
         <always_on>true</always_on><visualize>false</visualize><update_rate>100</update_rate>
@@ -84,6 +87,7 @@
         </plugin>
       </sensor>
     </gazebo>
+    
     <xacro:if value="${rear_camera}">
       <gazebo reference="rear_camera_link">
         <sensor type="camera" name="rear_camera">
@@ -96,6 +100,7 @@
       </gazebo>
     </xacro:if>
   </xacro:if>
+  
   <xacro:if value="${sim == 'ignition'}">
     <gazebo reference="wheel_01_link"><collision><surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface></collision></gazebo>
     <gazebo reference="wheel_02_link"><collision><surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface></collision></gazebo>

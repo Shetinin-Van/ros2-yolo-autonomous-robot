@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="surface_mud">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><pose>0.0000 0.0000 0.0200 0 0 0.0000</pose><geometry><box><size>5.7500 5.7500 0.0400</size></box></geometry><surface><friction><ode><mu>0.25</mu><mu2>0.25</mu2></ode></friction><contact><ode><kp>5e+04</kp><kd>40</kd></ode></contact></surface></collision>
+      <visual name="surface"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://surface_mud/meshes/surface.stl</uri></mesh></geometry><material><ambient>0.200 0.144 0.088 1</ambient><diffuse>0.250 0.180 0.110 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

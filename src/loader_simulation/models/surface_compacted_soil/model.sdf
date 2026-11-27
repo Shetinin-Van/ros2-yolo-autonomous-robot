@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="surface_compacted_soil">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><pose>0.0000 0.0000 0.0200 0 0 0.0000</pose><geometry><box><size>5.7500 5.7500 0.0400</size></box></geometry><surface><friction><ode><mu>0.85</mu><mu2>0.85</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>200</kd></ode></contact></surface></collision>
+      <visual name="surface"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://surface_compacted_soil/meshes/surface.stl</uri></mesh></geometry><material><ambient>0.304 0.224 0.144 1</ambient><diffuse>0.380 0.280 0.180 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

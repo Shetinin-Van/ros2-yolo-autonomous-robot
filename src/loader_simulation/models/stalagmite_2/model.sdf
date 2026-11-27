@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="stalagmite_2">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><geometry><mesh><uri>model://stalagmite_2/meshes/p0.stl</uri></mesh></geometry></collision>
+      <visual name="p0"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://stalagmite_2/meshes/p0.stl</uri></mesh></geometry><material><ambient>0.576 0.560 0.528 1</ambient><diffuse>0.720 0.700 0.660 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

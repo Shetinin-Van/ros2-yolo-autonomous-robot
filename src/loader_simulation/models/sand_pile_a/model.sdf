@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="sand_pile_a">
+    <static>true</static>
+    <link name="link">
+      <collision name="c0"><pose>0.0100 0.0100 0.0350 0 0 0</pose><geometry><cylinder><radius>0.8810</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c1"><pose>0.0100 0.0100 0.1050 0 0 0</pose><geometry><cylinder><radius>0.7770</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c2"><pose>0.0100 0.0100 0.1750 0 0 0</pose><geometry><cylinder><radius>0.6660</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c3"><pose>0.0100 -0.0300 0.2450 0 0 0</pose><geometry><cylinder><radius>0.5560</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c4"><pose>0.2900 0.4500 0.2450 0 0 0</pose><geometry><cylinder><radius>0.0890</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c5"><pose>-0.0700 0.5300 0.2450 0 0 0</pose><geometry><cylinder><radius>0.0800</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c6"><pose>0.0100 0.0100 0.3150 0 0 0</pose><geometry><cylinder><radius>0.4530</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c7"><pose>0.0100 0.0100 0.3850 0 0 0</pose><geometry><cylinder><radius>0.3580</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c8"><pose>-0.0300 -0.0300 0.4550 0 0 0</pose><geometry><cylinder><radius>0.2330</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c9"><pose>0.1700 0.0900 0.4550 0 0 0</pose><geometry><cylinder><radius>0.0800</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <collision name="c10"><pose>0.0100 0.0100 0.5250 0 0 0</pose><geometry><cylinder><radius>0.1260</radius><length>0.0740</length></cylinder></geometry><surface><friction><ode><mu>0.6</mu><mu2>0.6</mu2></ode></friction><contact><ode><kp>1e+06</kp><kd>100</kd></ode></contact></surface></collision>
+      <visual name="heap"><pose>0.0000 0.0000 0.0000 0 0 0.0000</pose><geometry><mesh><uri>model://sand_pile_a/meshes/heap.stl</uri></mesh></geometry><material><ambient>0.656 0.568 0.360 1</ambient><diffuse>0.820 0.710 0.450 1</diffuse><specular>0.05 0.05 0.05 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,812 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="soil_pile_granular_terrace_m">
+    <static>false</static>
+    <self_collide>true</self_collide>
+    <allow_auto_disable>true</allow_auto_disable>
+    <link name="g0"><pose>-0.2806 -0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.226 0.151 0.090 1</ambient><diffuse>0.282 0.188 0.113 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g1"><pose>-0.1403 -0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.213 0.142 0.085 1</ambient><diffuse>0.266 0.177 0.106 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g2"><pose>0.0000 -0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.204 0.136 0.082 1</ambient><diffuse>0.255 0.170 0.102 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g3"><pose>0.1403 -0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.249 0.166 0.099 1</ambient><diffuse>0.311 0.207 0.124 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g4"><pose>0.2806 -0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.233 0.155 0.093 1</ambient><diffuse>0.291 0.194 0.117 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g5"><pose>-0.3507 -0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.275 0.183 0.110 1</ambient><diffuse>0.344 0.229 0.138 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g6"><pose>-0.2104 -0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.264 0.176 0.106 1</ambient><diffuse>0.330 0.220 0.132 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g7"><pose>-0.0701 -0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.263 0.175 0.105 1</ambient><diffuse>0.329 0.219 0.132 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g8"><pose>0.0701 -0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.201 0.134 0.080 1</ambient><diffuse>0.251 0.167 0.100 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g9"><pose>0.2104 -0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.241 0.161 0.096 1</ambient><diffuse>0.301 0.201 0.120 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g10"><pose>0.3507 -0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.245 0.163 0.098 1</ambient><diffuse>0.306 0.204 0.122 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g11"><pose>-0.4208 -0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.201 0.134 0.080 1</ambient><diffuse>0.251 0.167 0.100 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g12"><pose>-0.2806 -0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.235 0.156 0.094 1</ambient><diffuse>0.293 0.196 0.117 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g13"><pose>-0.1403 -0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.223 0.149 0.089 1</ambient><diffuse>0.279 0.186 0.111 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g14"><pose>0.0000 -0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.214 0.143 0.086 1</ambient><diffuse>0.267 0.178 0.107 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g15"><pose>0.1403 -0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.260 0.173 0.104 1</ambient><diffuse>0.325 0.217 0.130 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g16"><pose>0.2806 -0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.230 0.153 0.092 1</ambient><diffuse>0.288 0.192 0.115 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g17"><pose>0.4208 -0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.205 0.137 0.082 1</ambient><diffuse>0.256 0.171 0.102 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g18"><pose>-0.4910 -0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.226 0.151 0.090 1</ambient><diffuse>0.283 0.188 0.113 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g19"><pose>-0.3507 -0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.269 0.180 0.108 1</ambient><diffuse>0.337 0.224 0.135 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g20"><pose>-0.2104 -0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.228 0.152 0.091 1</ambient><diffuse>0.285 0.190 0.114 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g21"><pose>-0.0701 -0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.212 0.141 0.085 1</ambient><diffuse>0.265 0.176 0.106 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g22"><pose>0.0701 -0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.202 0.135 0.081 1</ambient><diffuse>0.253 0.168 0.101 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g23"><pose>0.2104 -0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.237 0.158 0.095 1</ambient><diffuse>0.297 0.198 0.119 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g24"><pose>0.3507 -0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.250 0.166 0.100 1</ambient><diffuse>0.312 0.208 0.125 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g25"><pose>0.4910 -0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.229 0.153 0.092 1</ambient><diffuse>0.287 0.191 0.115 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g26"><pose>-0.5611 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.264 0.176 0.106 1</ambient><diffuse>0.330 0.220 0.132 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g27"><pose>-0.4208 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.238 0.159 0.095 1</ambient><diffuse>0.298 0.199 0.119 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g28"><pose>-0.2806 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.260 0.173 0.104 1</ambient><diffuse>0.325 0.217 0.130 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g29"><pose>-0.1403 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.242 0.161 0.097 1</ambient><diffuse>0.302 0.201 0.121 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g30"><pose>0.0000 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.244 0.162 0.097 1</ambient><diffuse>0.304 0.203 0.122 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g31"><pose>0.1403 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.229 0.153 0.092 1</ambient><diffuse>0.287 0.191 0.115 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g32"><pose>0.2806 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.205 0.137 0.082 1</ambient><diffuse>0.257 0.171 0.103 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g33"><pose>0.4208 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.253 0.168 0.101 1</ambient><diffuse>0.316 0.211 0.126 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g34"><pose>0.5611 0.0000 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.265 0.177 0.106 1</ambient><diffuse>0.331 0.221 0.132 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g35"><pose>-0.4910 0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.254 0.169 0.102 1</ambient><diffuse>0.318 0.212 0.127 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g36"><pose>-0.3507 0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.230 0.153 0.092 1</ambient><diffuse>0.288 0.192 0.115 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g37"><pose>-0.2104 0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.204 0.136 0.081 1</ambient><diffuse>0.255 0.170 0.102 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g38"><pose>-0.0701 0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.212 0.141 0.085 1</ambient><diffuse>0.264 0.176 0.106 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g39"><pose>0.0701 0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.240 0.160 0.096 1</ambient><diffuse>0.301 0.200 0.120 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g40"><pose>0.2104 0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.249 0.166 0.100 1</ambient><diffuse>0.311 0.207 0.124 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g41"><pose>0.3507 0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.199 0.133 0.080 1</ambient><diffuse>0.249 0.166 0.099 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g42"><pose>0.4910 0.1215 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.271 0.181 0.109 1</ambient><diffuse>0.339 0.226 0.136 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g43"><pose>-0.4208 0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.253 0.169 0.101 1</ambient><diffuse>0.317 0.211 0.127 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g44"><pose>-0.2806 0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.254 0.169 0.102 1</ambient><diffuse>0.318 0.212 0.127 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g45"><pose>-0.1403 0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.275 0.183 0.110 1</ambient><diffuse>0.344 0.229 0.138 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g46"><pose>0.0000 0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.246 0.164 0.098 1</ambient><diffuse>0.307 0.205 0.123 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g47"><pose>0.1403 0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.236 0.157 0.094 1</ambient><diffuse>0.295 0.197 0.118 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g48"><pose>0.2806 0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.215 0.143 0.086 1</ambient><diffuse>0.268 0.179 0.107 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g49"><pose>0.4208 0.2430 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.251 0.167 0.100 1</ambient><diffuse>0.314 0.209 0.126 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g50"><pose>-0.3507 0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.252 0.168 0.101 1</ambient><diffuse>0.315 0.210 0.126 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g51"><pose>-0.2104 0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.272 0.182 0.109 1</ambient><diffuse>0.340 0.227 0.136 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g52"><pose>-0.0701 0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.271 0.181 0.108 1</ambient><diffuse>0.338 0.226 0.135 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g53"><pose>0.0701 0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.236 0.157 0.094 1</ambient><diffuse>0.295 0.196 0.118 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g54"><pose>0.2104 0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.264 0.176 0.106 1</ambient><diffuse>0.330 0.220 0.132 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g55"><pose>0.3507 0.3644 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.273 0.182 0.109 1</ambient><diffuse>0.341 0.227 0.136 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g56"><pose>-0.2806 0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.230 0.153 0.092 1</ambient><diffuse>0.287 0.192 0.115 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g57"><pose>-0.1403 0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.245 0.163 0.098 1</ambient><diffuse>0.306 0.204 0.122 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g58"><pose>0.0000 0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.244 0.163 0.098 1</ambient><diffuse>0.305 0.203 0.122 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g59"><pose>0.1403 0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.235 0.157 0.094 1</ambient><diffuse>0.294 0.196 0.117 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g60"><pose>0.2806 0.4859 0.0700 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.234 0.156 0.094 1</ambient><diffuse>0.292 0.195 0.117 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g61"><pose>-0.0701 -0.4454 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.214 0.143 0.086 1</ambient><diffuse>0.268 0.179 0.107 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g62"><pose>0.0701 -0.4454 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.212 0.141 0.085 1</ambient><diffuse>0.265 0.176 0.106 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g63"><pose>-0.2806 -0.3240 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.221 0.147 0.088 1</ambient><diffuse>0.277 0.184 0.111 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g64"><pose>-0.1403 -0.3240 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.244 0.162 0.097 1</ambient><diffuse>0.305 0.203 0.122 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g65"><pose>0.0000 -0.3240 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.249 0.166 0.100 1</ambient><diffuse>0.311 0.208 0.125 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g66"><pose>0.1403 -0.3240 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.262 0.174 0.105 1</ambient><diffuse>0.327 0.218 0.131 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g67"><pose>0.2806 -0.3240 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.220 0.146 0.088 1</ambient><diffuse>0.274 0.183 0.110 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g68"><pose>-0.3507 -0.2025 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.238 0.158 0.095 1</ambient><diffuse>0.297 0.198 0.119 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g69"><pose>-0.2104 -0.2025 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.233 0.155 0.093 1</ambient><diffuse>0.291 0.194 0.116 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g70"><pose>-0.0701 -0.2025 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.210 0.140 0.084 1</ambient><diffuse>0.263 0.175 0.105 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g71"><pose>0.0701 -0.2025 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.275 0.183 0.110 1</ambient><diffuse>0.343 0.229 0.137 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g72"><pose>0.2104 -0.2025 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.223 0.149 0.089 1</ambient><diffuse>0.279 0.186 0.112 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g73"><pose>0.3507 -0.2025 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.252 0.168 0.101 1</ambient><diffuse>0.314 0.210 0.126 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g74"><pose>-0.4208 -0.0810 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.252 0.168 0.101 1</ambient><diffuse>0.314 0.210 0.126 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g75"><pose>-0.2806 -0.0810 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.258 0.172 0.103 1</ambient><diffuse>0.322 0.215 0.129 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g76"><pose>-0.1403 -0.0810 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.263 0.175 0.105 1</ambient><diffuse>0.329 0.219 0.131 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g77"><pose>0.0000 -0.0810 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.272 0.181 0.109 1</ambient><diffuse>0.340 0.226 0.136 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g78"><pose>0.1403 -0.0810 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.222 0.148 0.089 1</ambient><diffuse>0.278 0.185 0.111 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g79"><pose>0.2806 -0.0810 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.250 0.166 0.100 1</ambient><diffuse>0.312 0.208 0.125 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g80"><pose>0.4208 -0.0810 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.222 0.148 0.089 1</ambient><diffuse>0.277 0.185 0.111 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g81"><pose>-0.3507 0.0405 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.220 0.147 0.088 1</ambient><diffuse>0.275 0.184 0.110 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g82"><pose>-0.2104 0.0405 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.260 0.173 0.104 1</ambient><diffuse>0.324 0.216 0.130 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g83"><pose>-0.0701 0.0405 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.256 0.171 0.102 1</ambient><diffuse>0.320 0.213 0.128 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g84"><pose>0.0701 0.0405 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.255 0.170 0.102 1</ambient><diffuse>0.318 0.212 0.127 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g85"><pose>0.2104 0.0405 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.207 0.138 0.083 1</ambient><diffuse>0.258 0.172 0.103 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g86"><pose>0.3507 0.0405 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.273 0.182 0.109 1</ambient><diffuse>0.342 0.228 0.137 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g87"><pose>-0.4208 0.1620 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.247 0.164 0.099 1</ambient><diffuse>0.308 0.205 0.123 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g88"><pose>-0.2806 0.1620 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.234 0.156 0.093 1</ambient><diffuse>0.292 0.195 0.117 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g89"><pose>-0.1403 0.1620 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.269 0.179 0.108 1</ambient><diffuse>0.336 0.224 0.135 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g90"><pose>0.0000 0.1620 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.206 0.137 0.082 1</ambient><diffuse>0.257 0.171 0.103 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g91"><pose>0.1403 0.1620 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.221 0.147 0.088 1</ambient><diffuse>0.276 0.184 0.110 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g92"><pose>0.2806 0.1620 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.208 0.139 0.083 1</ambient><diffuse>0.260 0.173 0.104 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g93"><pose>0.4208 0.1620 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.223 0.148 0.089 1</ambient><diffuse>0.278 0.186 0.111 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g94"><pose>-0.3507 0.2835 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.259 0.173 0.104 1</ambient><diffuse>0.324 0.216 0.130 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g95"><pose>-0.2104 0.2835 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.209 0.139 0.083 1</ambient><diffuse>0.261 0.174 0.104 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g96"><pose>-0.0701 0.2835 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.257 0.171 0.103 1</ambient><diffuse>0.321 0.214 0.129 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g97"><pose>0.0701 0.2835 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.244 0.163 0.098 1</ambient><diffuse>0.305 0.203 0.122 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g98"><pose>0.2104 0.2835 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.223 0.149 0.089 1</ambient><diffuse>0.279 0.186 0.111 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g99"><pose>0.3507 0.2835 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.264 0.176 0.106 1</ambient><diffuse>0.330 0.220 0.132 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g100"><pose>-0.1403 0.4049 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.200 0.133 0.080 1</ambient><diffuse>0.250 0.167 0.100 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g101"><pose>0.0000 0.4049 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.216 0.144 0.086 1</ambient><diffuse>0.270 0.180 0.108 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g102"><pose>0.1403 0.4049 0.1845 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.236 0.158 0.095 1</ambient><diffuse>0.296 0.197 0.118 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g103"><pose>-0.0701 -0.2835 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.228 0.152 0.091 1</ambient><diffuse>0.286 0.190 0.114 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g104"><pose>0.0701 -0.2835 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.227 0.152 0.091 1</ambient><diffuse>0.284 0.189 0.114 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g105"><pose>-0.2806 -0.1620 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.276 0.184 0.110 1</ambient><diffuse>0.345 0.230 0.138 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g106"><pose>-0.1403 -0.1620 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.240 0.160 0.096 1</ambient><diffuse>0.300 0.200 0.120 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g107"><pose>0.0000 -0.1620 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.249 0.166 0.100 1</ambient><diffuse>0.311 0.208 0.125 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g108"><pose>0.1403 -0.1620 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.233 0.155 0.093 1</ambient><diffuse>0.291 0.194 0.116 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g109"><pose>0.2806 -0.1620 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.213 0.142 0.085 1</ambient><diffuse>0.266 0.177 0.106 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g110"><pose>-0.2104 -0.0405 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.205 0.137 0.082 1</ambient><diffuse>0.256 0.171 0.103 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g111"><pose>-0.0701 -0.0405 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.257 0.171 0.103 1</ambient><diffuse>0.321 0.214 0.128 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g112"><pose>0.0701 -0.0405 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.254 0.169 0.102 1</ambient><diffuse>0.318 0.212 0.127 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g113"><pose>0.2104 -0.0405 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.275 0.184 0.110 1</ambient><diffuse>0.344 0.229 0.138 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g114"><pose>-0.2806 0.0810 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.217 0.144 0.087 1</ambient><diffuse>0.271 0.181 0.108 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g115"><pose>-0.1403 0.0810 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.228 0.152 0.091 1</ambient><diffuse>0.285 0.190 0.114 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g116"><pose>0.0000 0.0810 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.227 0.151 0.091 1</ambient><diffuse>0.283 0.189 0.113 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g117"><pose>0.1403 0.0810 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.242 0.161 0.097 1</ambient><diffuse>0.303 0.202 0.121 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g118"><pose>0.2806 0.0810 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.201 0.134 0.080 1</ambient><diffuse>0.251 0.167 0.100 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g119"><pose>-0.2104 0.2025 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.260 0.173 0.104 1</ambient><diffuse>0.325 0.217 0.130 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g120"><pose>-0.0701 0.2025 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.255 0.170 0.102 1</ambient><diffuse>0.319 0.212 0.127 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g121"><pose>0.0701 0.2025 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.204 0.136 0.082 1</ambient><diffuse>0.255 0.170 0.102 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g122"><pose>0.2104 0.2025 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.253 0.169 0.101 1</ambient><diffuse>0.317 0.211 0.127 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g123"><pose>0.0000 0.3240 0.2991 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.224 0.149 0.089 1</ambient><diffuse>0.280 0.186 0.112 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g124"><pose>-0.0701 -0.1215 0.4136 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.231 0.154 0.092 1</ambient><diffuse>0.289 0.193 0.116 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g125"><pose>0.0701 -0.1215 0.4136 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.213 0.142 0.085 1</ambient><diffuse>0.266 0.177 0.106 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g126"><pose>-0.1403 0.0000 0.4136 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.251 0.168 0.101 1</ambient><diffuse>0.314 0.209 0.126 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g127"><pose>0.0000 0.0000 0.4136 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.243 0.162 0.097 1</ambient><diffuse>0.303 0.202 0.121 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g128"><pose>0.1403 0.0000 0.4136 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.199 0.132 0.079 1</ambient><diffuse>0.248 0.166 0.099 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g129"><pose>-0.0701 0.1215 0.4136 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.209 0.139 0.083 1</ambient><diffuse>0.261 0.174 0.104 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g130"><pose>0.0701 0.1215 0.4136 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.255 0.170 0.102 1</ambient><diffuse>0.319 0.212 0.127 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g131"><pose>0.0000 -0.0810 0.5282 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.207 0.138 0.083 1</ambient><diffuse>0.259 0.173 0.104 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g132"><pose>-0.0701 0.0405 0.5282 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.234 0.156 0.094 1</ambient><diffuse>0.292 0.195 0.117 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+    <link name="g133"><pose>0.0701 0.0405 0.5282 0 0 0</pose>
+      <velocity_decay><linear>0.001</linear><angular>0.02</angular></velocity_decay>
+      <inertial><mass>0.776</mass><inertia><ixx>0.00380</ixx><iyy>0.00380</iyy><izz>0.00380</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+      <collision name="c"><max_contacts>4</max_contacts><geometry><sphere><radius>0.0693</radius></sphere></geometry><surface><friction><ode><mu>1.7</mu><mu2>1.7</mu2></ode></friction><contact><ode><kp>1e+07</kp><kd>10000</kd><max_vel>0.01</max_vel><min_depth>0.0001</min_depth></ode></contact></surface></collision>
+      <visual name="v"><geometry><sphere><radius>0.0700</radius></sphere></geometry><material><ambient>0.250 0.167 0.100 1</ambient><diffuse>0.312 0.208 0.125 1</diffuse><specular>0.03 0.03 0.03 1</specular></material></visual>
+    </link>
+  </model>
+</sdf>
